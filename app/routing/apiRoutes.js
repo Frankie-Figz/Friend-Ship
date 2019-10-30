@@ -6,7 +6,7 @@ var path = require("path");
 
 var friendsData = require("../data/friends");
 
-var Math = require("Mathjs");
+// var Math = require("mathjs");
 
 module.exports = function(app){
 
