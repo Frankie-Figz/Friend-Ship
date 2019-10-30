@@ -1,6 +1,3 @@
-<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-
 # Friend-Ship
 An app to connect to people who share similar belief as you. The compability analysis is done via a survey. This app uses the following technology stack :
 
