@@ -1,0 +1,32 @@
+{
+  "name": "Friend-Ship",
+  "version": "1.0.0",
+  "description": "An app to connect to people who share similar belief as you. The compability analysis is done via a survey.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Frankie-Figz/Friend-Ship.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Frankie-Figz/Friend-Ship/issues"
+  },
+  "homepage": "https://github.com/Frankie-Figz/Friend-Ship#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "mathjs": "^6.2.3",
+    "mysql": "^2.17.1",
+    "path": "^0.12.7"
+  },
+  "engines":{
+    "node": "8.12.0"
+  }
+}
