@@ -10,12 +10,6 @@ var friendsData = require("../data/friends");
 
 module.exports = function(app){
 
-  let localMinimum = {
-    name: "",
-    value: 100,
-    photo:""
-  };
-  
   // A GET route with the url `/api/friends`. 
   // This will be used to display a JSON of all possible friends.
   app.get("/api/friends", function(req, res) {
@@ -37,15 +31,21 @@ module.exports = function(app){
 
     // res.json(friendsData);
 
+    var localMinimum = {
+      name: "",
+      value: 100,
+      photo:""
+    };
+    
     for(var i = 0; i < friendsData.length; i++){
       var currentScore = 0;
-
+      
       for(var j in newPerson.score){
         console.log(newPerson);
         currentScore = currentScore + Math.abs(friendsData[i].score[j] - parseInt(newPerson.score[j]));
         console.log(currentScore); 
       }
-
+  
       if(currentScore < localMinimum.value){
         localMinimum.value = currentScore;
         localMinimum.name = friendsData[i].name;
