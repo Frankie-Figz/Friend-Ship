@@ -28,15 +28,13 @@ module.exports = function(app){
     // Using a RegEx Pattern to remove spaces from newCharacter
     // You can read more about RegEx Patterns later https://www.regexbuddy.com/regex.html
     // newPerson.routeName = newCharacter.name.replace(/\s+/g, "").toLowerCase();
-
     // res.json(friendsData);
-
     var localMinimum = {
       name: "",
       value: 100,
       photo:""
     };
-    
+
     for(var i = 0; i < friendsData.length; i++){
       var currentScore = 0;
       

@@ -19,12 +19,3 @@ require("./app/routing/htmlRoutes")(app);
 app.listen(PORT, function() {
     console.log("App listening on PORT: " + PORT);
   });
-// Maybe a function to push the form into the friends class ?
-function pushToFriendList(){};
-
-// Calculate the difference between two individuals
-function calculateDifference(){};
-
-// Iterate through the different individuals to find the best match
-function findOptimalFriend(){};
-
