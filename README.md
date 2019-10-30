@@ -16,20 +16,14 @@ The Node libraries used for this project are the following.
     A node library used to handle the html routing that also connects the backend with the frontend.
 
 # Functionality
-Documentation of the functionality can be found here :
-<a href="https://drive.google.com/open?id=1IcBQv2dbP0MCgmllVlVkqowVFKBxmyzY "> PDF</a>
+This app has been deployed to heroku. You can take it for a test drive in the following link :
+<a href="https://secure-earth-43367.herokuapp.com/ "> APP</a>
 
 ## Survey matching
   The survey is used as a mechanism to match individuals. On the backend their is an array of
-  previous participants who have answered the survey. The optimal match is determined by the
-  individual that minimizes the following function :
+  previous participants who have answered the survey. The optimal match is the individual whose answers are the closest to the answers 
+  of the individual filling the survey. The distance between two individuals is calculated by summing the absolute value of the difference per question. 
   
-  (Insert the mathematical formula for the optimization)
-  <p>
-  When \(a \ne 0\), there are two solutions to \(ax^2 + bx + c = 0\) and they are
-  \[x = {-b \pm \sqrt{b^2-4ac} \over 2a}.\]
-</p>
-
   Once the user completes the survey the name and picture of the optimal match is displayed in a modal pop-up.
 
   Their is a href link in the bottom of the page that links to all individuals that have completed the survey.
